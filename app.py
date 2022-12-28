@@ -5,7 +5,7 @@ from youtubesearchpython import ChannelsSearch, ResultMode, ChannelSearch, Video
 
 @st.cache
 def buscarCancion(param):
-    videosSearch = VideosSearch(f'"karaok"+"{param}"', limit = 40)
+    videosSearch = VideosSearch(f'"karaoke"+"{param}"', limit = 40)
     resultados = videosSearch.result()
     resultados = [[i['title'],i['link'],i['richThumbnail']] for i in resultados['result']]
     res = []
