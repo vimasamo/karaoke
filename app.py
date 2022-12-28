@@ -55,10 +55,13 @@ param = ''
 
 param = st.text_input(
     "Escribe el nombre de una canción o artista",
-    placeholder=''
+    key='text'
 )
 
-if st.button("Limpiar búsqueda"):
+def clear_text():
+    st.session_state['text'] = ''
+
+if st.button("Limpiar búsqueda", on_click=clear_text):
     param = ''
 
 if param != '':
@@ -85,4 +88,14 @@ if param != '':
     #         st.image(i[2])
     #         st.subheader(i[0])
 
-st.markdown('v.tt.alpha.0.1')
+st.markdown('v.tt.alpha.0.2)
+
+
+
+##############################################################################
+# versiones:
+# v.tt.alpha.0.1
+# prueba interna, primer release
+# v.tt.alpha.0.2
+# ahora limpia correctamente el input_text
+##############################################################################
