@@ -88,7 +88,7 @@ if param != '':
     #         st.image(i[2])
     #         st.subheader(i[0])
 
-st.markdown('v.tt.alpha.0.2)
+st.markdown('v.tt.alpha.0.2')
 
 
 
