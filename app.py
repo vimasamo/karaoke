@@ -65,9 +65,8 @@ if st.button("Limpiar búsqueda", on_click=clear_text):
     param = ''
 
 if param != '':
-    # col1, col2, col3 = 
     resultados = buscarCancion(param)
-    st.caption('Mostrando los 9 resultados principales')
+    st.caption('Mostrando los 12 resultados principales')
     resultados = [resultados[j:j+3] for j in range(0,len(resultados),3)]
 
     col1, col2, col3 = st.columns(3)
